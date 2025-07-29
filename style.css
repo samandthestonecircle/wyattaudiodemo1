@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --white: rgba(255, 255, 255, 0.804);
+    --black: rgba(0, 0, 0, 0.901);
+    --cardPad: 8px;
+}
+
+@font-face {
+    font-family: agency;
+    src: url(AgencyFB-Bold.ttf);
+}
+
+h2 {
+    font-family: agency;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+p1 {
+    font-family: sans-serif;
+    font-size: 1.1rem;
+     color: var(--white);
+}
+
+ul {
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    padding-left: 1rem;
+    /* list-style-position: inside; */
+     color: var(--white);
+}
+
+/* LANDING PAGE */
+
+
+    
+
+#showreel {
+   width: 100vw; 
+   margin-bottom: -4px;
+  
+}
+
+#burger-div {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    width:51px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    z-index: 1;
+}
+
+#burger-div:hover {
+    cursor: pointer;
+}
+
+.burger-line {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(255, 255, 255);
+  margin: 8px;
+}
+
+#menu {
+    position: fixed;
+}
+
+#social-bar {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 165px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.social-icon {
+    width: 35px;
+}
+
+.social-icon:hover {
+    cursor: pointer;
+}
+
+/* TILES PAGE */
+
+
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: var(--black);
+}
+
+.card-item {
+    width: 250px;
+    margin: 35px;
+    /* border-radius: 10px; */
+    padding: var(--cardPad);
+    background-color: black;
+}
+
+.card-img {   
+    width: 100%;
+}
+
+.card-text, .card-list {
+    padding: var(--cardPad); 
+}
+
+
+/* FOOTER */
+
+#footer-container {
+    height: 200px;
+    background-color: var(--black);
+
+    display: flex;
+    justify-content: center;
+
+  
+}
+
